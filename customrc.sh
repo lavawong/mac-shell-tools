@@ -67,6 +67,6 @@ alias svnlast=__svnlast
 __svndiff ()
 {
 	local path=$1
-	svn diff $path | idiff 
+	svn diff $path | colordiff
 }
 alias svndiff=__svndiff
