@@ -30,6 +30,7 @@ __ps1_last_cmd ()
 }
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWCOLORHINTS=1
+[ -f $HOME/.securityrc ] && source $HOME/.securityrc
 if [ -f ~/workspace/tools/git-prompt.sh ]; then
   source ~/workspace/tools/git-prompt.sh
   export PS1='$(__ps1_last_cmd "(%s)") \e[33;40m\u\e[m \e[036;40m\W\e[m $(__git_ps1 "(%s)")\\$ '
