@@ -5,7 +5,7 @@
 	email = lazy.false@gmail.com
 [core]
     excludesfile = *.swp
-	excludesfile = /Users/lavawong/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
 [diff]
     tool = sourcetree
 [difftool "sourcetree"]
